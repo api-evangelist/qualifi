@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+url: https://trust.qualifi.hr/
+source: https://www.qualifi.hr/security-trust
+certifications:
+- SOC 2 Type II
+compliance:
+- WCAG 2.0 AA
+- ADA
+notes: >-
+  Trust center is hosted on Vanta (trust.qualifi.hr resolves to
+  cname.vantatrust.com). The public /security-trust page states Qualifi is
+  "SOC 2 Type II" certified and directs customers to the trust center; the full
+  SOC 2 report is available to Enterprise customers on request. No security.txt,
+  bug-bounty, or published vulnerability-disclosure policy was found.
+evidence:
+- source: https://www.qualifi.hr/security-trust
+  keywords: [soc 2 type ii, trust center, encrypted, monitoring]
+- source: dns
+  keywords: [trust.qualifi.hr -> cname.vantatrust.com]

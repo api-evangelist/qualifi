@@ -1,7 +1,27 @@
 aid: qualifi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qualifi.png
 name: Qualifi
-description: Qualifi is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Qualifi is a recruiting and hiring platform that streamlines candidate
+  screening through asynchronous, voice-based phone interviews, automated
+  scheduling, and live video interviews. Recruiters send candidates a
+  pre-recorded phone screen, review responses on their own schedule, and move
+  qualified applicants forward faster, reducing time-to-hire while keeping the
+  candidate experience high. Qualifi offers 50+ applicant tracking system (ATS)
+  integrations, a "Qualifi Copilot" that surfaces the tool directly inside your
+  ATS, and Google/Microsoft calendar sync. The company is a Techstars portfolio
+  company and is SOC 2 Type II certified.
 url: https://raw.githubusercontent.com/api-evangelist/qualifi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +31,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Recruiting
+- Hiring
+- Human Resources
+- HR Tech
+- Interviewing
+- Talent Acquisition
+- ATS
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/qualifi-domain-security.yml
 - type: Website
-  url: https://qualifi.hr/
+  url: https://www.qualifi.hr/
+- type: Pricing
+  url: https://www.qualifi.hr/pricing
+- type: Blog
+  url: https://www.qualifi.hr/resources/blog
+- type: Support
+  url: https://www.qualifi.hr/contact-us
+- type: TrustCenter
+  url: https://trust.qualifi.hr/
+- type: Compliance
+  url: https://www.qualifi.hr/security-trust
